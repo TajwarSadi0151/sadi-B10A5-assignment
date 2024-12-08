@@ -56,46 +56,44 @@
 
     <!-- navbar starts -->
 
-    <div class="bg-bg_gray w-full">
-      <div class="navbar max-w-screen-xl mx-auto pb-10">
-        <div class="navbar-start">
-          <a class="px-2 py-3 text-xl text-primary lg:font-semibold bg-tertiary lg:py-3 lg:px-8 rounded-lg">Blog</a>
-        </div>
-        <div class="navbar-center lg:flex">
-          <div class="w-12 m-2">
-            <img src="assets/logo.png" alt="coin donate" class="w-full h-full object-contain">
+    <div class="flex flex-col sticky top-0 shadow-md z-50 mb-8">
+      <div class="bg-bg_gray w-full" id="navbar-bg">
+        <div class="navbar max-w-screen-xl mx-auto pb-10">
+          <div class="navbar-start">
+            <a class="px-2 py-3 text-xl text-primary lg:font-semibold bg-tertiary lg:py-3 lg:px-8 rounded-lg">Blog</a>
           </div>
-          <h5 class="text-xs font-semibold m-1 lg:text-xl text-primary lg:m-2">Donate Bangladesh</h5>
-        </div>
-        <div class="navbar-end">
-          <div class="w-5 h-5">
-            <img src="assets/coin.png" alt="coin image" class="w-full h-full object-contain">
-          </div>
-
-          <!--* balance stats starts -->
-
-          <div>
-            <div class="stat p-2">
-              <div class="text-xs lg:font-medium lg:text-xl lg:text-secondary">5500<span class="p-1">BDT</span> </div>
+          <div class="navbar-center lg:flex">
+            <div class="w-12 m-2">
+              <img src="assets/logo.png" alt="coin donate" class="w-full h-full object-contain">
             </div>
+            <h5 class="text-xs font-semibold m-1 lg:text-xl text-primary lg:m-2">Donate Bangladesh</h5>
           </div>
+          <div class="navbar-end">
+            <div class="w-5 h-5">
+              <img src="assets/coin.png" alt="coin image" class="w-full h-full object-contain">
+            </div>
 
-          <!--* balance stats ends -->
+            <!--* balance stats starts -->
 
+            <div>
+              <div class="stat p-2">
+                <div class="text-xs lg:font-medium lg:text-xl lg:text-secondary">5500<span class="p-1">BDT</span> </div>
+              </div>
+            </div>
+
+            <!--* balance stats ends -->
+
+          </div>
         </div>
       </div>
+      <div class="pt-20 pb-4 flex justify-center items-center gap-4" id="ad-color">
+        <button class="px-8 text-xl bg-tertiary font-semibold py-4 rounded-lg">Donation</button>
+        <button
+          class="px-8 text-xl font-semibold py-3 rounded-lg border-solid border-2 border-secondary_two">History</button>
+      </div>
     </div>
+
     <!--* navbar ends -->
-
-    <!--* features starts -->
-
-    <div class="mt-20 mb-8 flex justify-center items-center gap-4">
-      <button class="px-8 text-xl bg-tertiary font-semibold py-4 rounded-lg">Donation</button>
-      <button
-        class="px-8 text-xl font-semibold py-4 rounded-lg border-solid border-2 border-secondary_two">History</button>
-    </div>
-
-    <!--* features ends -->
 
     <!--* 1st card starts -->
 
@@ -190,7 +188,12 @@
           </div>
         </div>
         <h3 class="text-xl text-primary font-bold pb-4">Aid for Injured in the Quota Movement</h3>
-        <p class="text-base font-light text-secondary max-w-lg mb-6">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+        <p class="text-base font-light text-secondary max-w-lg mb-6">The recent Quota movement has resulted in numerous
+          injuries and significant hardship for many individuals. Your support is crucial in providing medical
+          assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that
+          injured individuals receive the care and support they need during this challenging time. Every donation plays
+          a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to
+          support these brave individuals in their time of need.</p>
 
         <!--* Donating money for quota starts -->
 
@@ -206,13 +209,14 @@
     </div>
 
     <!--* 3rd card ends -->
-
-    <!-- footer starts -->
-    <footer class="bg-bg_gray w-full h-36"></footer>
-    <!-- footer ends -->
-
-
   </main>
+
+  <!-- footer starts -->
+  <footer class="bg-bg_gray w-full h-36"></footer>
+
+  <!-- footer ends -->
+   
+  <script src="js/scrolled.js"></script>
   <script src="js/donateNoakhali.js"></script>
 </body>
 

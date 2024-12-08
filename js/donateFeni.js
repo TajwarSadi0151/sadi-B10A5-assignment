@@ -1,11 +1,11 @@
-document.getElementById('button-donate-first')
+document.getElementById('button-donate-second')
   .addEventListener('click', function (event) {
     event.preventDefault();
 
-    const addMoney = inputFieldValueById('donate-money');
-    const addAmount = textFieldValueById('amount-added');
+    const addMoney = inputFieldValueById('donate-money-second');
+    const addAmount = textFieldValueById('amount-added-second');
     const remainBalance = balanceFieldValueById('self-balance');
-    console.log(addMoney, addAmount);
+    
 
     if (isNaN(addMoney) || addMoney < 0 || addMoney > remainBalance) {
       alert('Invalid Donation Amount');
@@ -14,7 +14,8 @@ document.getElementById('button-donate-first')
 
       const donateAmount = addAmount + addMoney;
       const newBalance = remainBalance - addMoney;
-      document.getElementById('amount-added').innerText = donateAmount;
+      
+      document.getElementById('amount-added-second').innerText = donateAmount;
       document.getElementById('self-balance').innerText = newBalance;
       
       const div = document.createElement('div');

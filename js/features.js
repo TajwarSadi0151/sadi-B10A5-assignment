@@ -9,12 +9,3 @@ document.getElementById('transaction-section')
   showSectionById('transaction-container');
   showButtonById('transaction-section');
 })
-
-// document.showButtonById('donation-button')
-// .addEventListener('click', function () {
-//   showButtonById('donation-button');
-// })
-// document.showButtonById('transaction-section')
-// .addEventListener('click', function () {
-//   showButtonById('transaction-section');
-// })

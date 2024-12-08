@@ -60,7 +60,7 @@
       <div class="bg-bg_gray w-full" id="navbar-bg">
         <div class="navbar max-w-screen-xl mx-auto pb-10">
           <div class="navbar-start">
-            <a class="px-2 py-3 text-xl text-primary lg:font-semibold bg-tertiary lg:py-3 lg:px-8 rounded-lg">Blog</a>
+            <a id="new-blog-button" class="px-2 py-3 text-xl text-primary lg:font-semibold bg-tertiary lg:py-3 lg:px-8 rounded-lg">Blog</a>
           </div>
           <div class="navbar-center lg:flex">
             <div class="w-12 m-2">
@@ -88,7 +88,7 @@
         </div>
       </div>
       <div class="pt-20 pb-4 flex justify-center items-center gap-4" id="ad-color">
-        <button id="donation-button" class="px-8 text-xl bg-tertiary font-semibold py-4 rounded-lg">Donation</button>
+        <button id="donation-button" class="px-8 text-xl bg-tertiary font-semibold py-4 rounded-lg border-solid border-2 border-secondary_two"">Donation</button>
         <button id="transaction-section"
           class="px-8 text-xl font-semibold py-3 rounded-lg border-solid border-2 border-secondary_two">History</button>
       </div>
@@ -132,6 +132,8 @@
           <button id="button-donate-first"
             class="bg-tertiary text-xl font-semibold py-4 px-8 rounded-lg flex justify-center items-center">Donate
             Now</button>
+           
+            
         </div>
       </div>
 
@@ -150,7 +152,7 @@
               <img src="assets/coin.png" alt="coin">
             </div>
             <div class="stat">
-              <div class="text-xs lg:font-medium lg:text-xl lg:text-secondary">600<span class="p-1">BDT</span> </div>
+              <div id="amount-added-second" class="text-xs lg:font-medium lg:text-xl lg:text-secondary">600<span class="p-1">BDT</span> </div>
             </div>
           </div>
           <h3 class="text-xl text-primary font-bold pb-4">Donate for Flood Relief in Feni,Bangladesh</h3>
@@ -164,12 +166,12 @@
           <!--* Donating money for feni flood starts -->
 
           <div class="form-control mb-4">
-            <input type="text" placeholder="Write Donation Amount" class="input input-bordered" required />
+            <input id="donate-money-second" type="text" placeholder="Write Donation Amount" class="input input-bordered" required />
           </div>
 
           <!--* Donating money for feni flood ends -->
 
-          <button class="bg-tertiary text-xl font-semibold py-4 px-8 rounded-lg flex justify-center items-center">Donate
+          <button id="button-donate-second" class="bg-tertiary text-xl font-semibold py-4 px-8 rounded-lg flex justify-center items-center">Donate
             Now</button>
         </div>
       </div>
@@ -190,7 +192,7 @@
               <img src="assets/coin.png" alt="coin">
             </div>
             <div class="stat">
-              <div class="text-xs lg:font-medium lg:text-xl lg:text-secondary">2400<span class="p-1">BDT</span> </div>
+              <div id="amount-added-third" class="text-xs lg:font-medium lg:text-xl lg:text-secondary">2400<span class="p-1">BDT</span> </div>
             </div>
           </div>
           <h3 class="text-xl text-primary font-bold pb-4">Aid for Injured in the Quota Movement</h3>
@@ -207,12 +209,13 @@
           <!--* Donating money for quota starts -->
 
           <div class="form-control mb-4">
-            <input type="text" placeholder="Write Donation Amount" class="input input-bordered" required />
+            <input id="donate-money-third" type="text" placeholder="Write Donation Amount" class="input input-bordered" required />
           </div>
+
 
           <!--* Donating money for quota ends -->
 
-          <button class="bg-tertiary text-xl font-semibold py-4 px-8 rounded-lg flex justify-center items-center">Donate
+          <button id="button-donate-third" class="bg-tertiary text-xl font-semibold py-4 px-8 rounded-lg flex justify-center items-center">Donate
             Now</button>
         </div>
       </div>
@@ -221,8 +224,8 @@
     </div>
 
     <div class="card lg:card-side bg-base-100 shadow-xl">
-      <div id="transaction-container" class="card-body border-2 border-solid border-red-200">
-        <h2 class="card-title">New album is released!</h2>
+      <div id="transaction-container" class="card-body hidden">
+        
       </div>
     </div>
     <!-- transaction End -->
@@ -235,8 +238,13 @@
 
   <script src="js/scrolled.js"></script>
   <script src="js/utilities.js"></script>
-  <script src="js/donateNoakhali.js"></script>
   <script src="js/features.js"></script>
+  <script src="js/donateNoakhali.js"></script>
+  <script src="js/donateFeni.js"></script>
+  <script src="js/quota.js"></script>
+  <script src="js/faq.js"></script>
+  
+  
 </body>
 
 </html>

@@ -23,7 +23,7 @@ document.getElementById('button-donate-second')
       const currentDate = new Date();
       const formatDate = currentDate.toString();
       div.innerHTML = `
-          <p class="text-xl font-bold">${addMoney} Taka is Donated for famine-2024 at Feni, Bangladesh</p><br>
+          <p class="text-xl font-bold">${addMoney} Taka is Donated for Flood Relief in Feni,Bangladesh</p><br>
           <p class="text-base font-light text-secondary">Date: ${formatDate}</p>
 
       `;

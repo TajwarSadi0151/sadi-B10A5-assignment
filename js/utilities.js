@@ -23,7 +23,7 @@ function showSectionById (id) {
 
   document.getElementById('add-section').classList.add('hidden');
   document.getElementById('transaction-container').classList.add('hidden');
-
+  
   document.getElementById(id).classList.remove('hidden');
 }
 
